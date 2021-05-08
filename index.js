@@ -152,7 +152,6 @@
 //   console.log(array[i]);
 // }
 
- 
 // slice()	selects the part of an array and returns the new array
 // splice()	removes or replaces existing elements and/or adds new elements
 // / concat()	joins two or more arrays and returns a result
@@ -162,17 +161,97 @@
 // forEach()	calls a function for each element
 // includes()	checks if an array contains a specified element
 
-let dailyActivities = ['java', 'c', 'javascript']
-let newRoutine = ['python'];
+// let dailyActivities = ['java', 'c', 'javascript']
+// let newRoutine = ['python'];
 
-//finding the index position of string
-const position = dailyActivities.indexOf('c');
-console.log(position); // 1
+// //finding the index position of string
+// const position = dailyActivities.indexOf('c');
+// console.log(position); // 1
 
-// slicing the array elements
-const newDailyActivities = dailyActivities.slice(1);
-console.log(newDailyActivities); //[ 'c', 'javascript' ]
+// // slicing the array elements
+// const newDailyActivities = dailyActivities.slice(1);
+// console.log(newDailyActivities); //[ 'c', 'javascript' ]
 
-// concatenating two arrays
-const routine = dailyActivities.concat(newRoutine);
-console.log(routine); // [ 'java', 'c', 'javascript', 'python' ]
+// // concatenating two arrays
+// const routine = dailyActivities.concat(newRoutine);
+// console.log(routine); // [ 'java', 'c', 'javascript', 'python' ]
+
+// The try, catch   blocks are used to handle exceptions (a type of an error). Before you learn about them, you need to know about the types of errors in programming
+
+// These errors that occur during runtime are called exceptions. Now, let's see how you can handle these exceptions.
+// JavaScript try...catch
+// The catch block handles the errors as per the catch statements.
+
+// / program to show try...catch in a program
+
+// const number = 100,string= "shahil";
+
+// try {
+//   console.log(number / string);
+
+//   // forgot to define variable a
+//   console.log(a);
+// } catch (error) {
+//   console.log("Error Block");
+//   console.log("Error message: " + error);
+// }
+// // For variable names use lowerCamelCasing, and use concise, human-readable, semantic names where appropriate.
+
+// let age=23;
+// age=34;
+// console.log(age)//should be return 34
+
+// // default function parameters allow to initialize named parameters with default values if no values or undefined are passed into function
+
+// function greet(message='Hello') {
+//     console.log(message);
+//   }
+//    greet("Hi"); // 'Hi'
+//    greet(); // 'Hi'
+//    function date(d = today()) {
+//     console.log(d);
+// }
+// function today() {
+//     return (new Date()).toLocaleDateString("en-US");
+// }
+// date("5/7");
+// const a=11;
+// console.log(a); // 11
+
+// const readline = require('readline').createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// readline.question('Who are you?', name => {
+//   console.log(`Hey there ${name}!`);
+//   readline.close();
+// });
+
+// const a =5;
+// const b="5";
+// console.log(a===b) // false
+// const c = 15;
+// const d = 12;
+// console.log(c===d) // false
+// const e= 15;
+// const f= 15;
+// console.log(f===e) // true
+
+const parentFunc = (function () {
+  let a = 5;
+
+  function childFunc() {
+    let b = 10;
+
+    let sum = a + b;
+    console.log(sum);
+  }
+  return childFunc();
+}());
+
+// parentFunc();
+
+// console.log("Outside of the function ",a); // here you found an error message like below image.
+
+// because local variable can't be accessed outside of the function.
