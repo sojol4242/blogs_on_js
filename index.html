@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #button {
+      background: grey;
+      color: black;
+      height: 48px;
+      width: 96px;
+      cursor: pointer;
+      border: none;
+      font-size: 24px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .active, .passive{
+         font-size: 24px;
+         font-weight: bold;
+         padding-left: 10px;
+
+    }
+  </style>
+  <!-- onclick="this.innerHTML++" -->
+  <body>
+    <button id="button" onclick="this.innerHTML++"></button>
+
+    <div><span class="active"  >Active,</span> <span class="passive">Passive</span></div>
+    <script src="index.js"></script>
+  </body>
+</html>
