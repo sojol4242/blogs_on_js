@@ -428,11 +428,31 @@
 //   console.log("Falsy")
 // }
  
-const arr=[1,2,3,4,5,7,6];
-console.log("Default Array : " + arr);
-const findResult =arr.find((value)=>{
-    return value> 4;
-})
+// const arr=[1,2,3,4,5,7,6];
+// console.log("Default Array : " + arr);
+// const findResult =arr.find((value)=>{
+//     return value> 4;
+// })
  
-console.log(findResult);
-console.log(arr);
+// console.log(findResult);
+// console.log(arr);
+// find unique value:
+const array = [1, 1, 2, 3, 5, 5, 1]
+const uniqueArray = [...new Set(array)];
+
+console.log(uniqueArray); // Output: [1, 2, 3, 5]
+// Comma operator
+// We all actually ignore the good old comma, don't we? Well, here's a little info on this guy that you should know. It evaluates each of its operands (from left to right) and then returns the value of the last operand.
+ 
+let x = 1;
+
+x = (x++, x);
+
+console.log(x); // expected output: 2
+
+x = (2, 3);
+
+console.log(x); // expected output: 3
+// find random value with min and max
+
+var x = Math.floor(Math.random() * (max - min + 1)) + min;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Form in javascript</title>
     <link rel="stylesheet" href="./form.css">
   </head>
@@ -15,14 +16,14 @@
         <form id="form" class="form">
             <div class="form-control">
                 <label for="username">Username</label>
-                <input type="text" placeholder="username" id="username"/>
+                <input type="text" placeholder="username123" id="username" />
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-control">
                 <label for="username">Email</label>
-                <input type="email" placeholder="example@gmail.com" id="email" />
+                <input type="email" placeholder="example@example.com" id="email" />
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
@@ -35,13 +36,13 @@
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="username">Confirm Password</label>
-                <input type="password" placeholder="Confirm Password" id="passwordConfirm"/>
+                <label for="username">Password Confirm</label>
+                <input type="password" placeholder="confirm password" id="password2"/>
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
     
@@ -49,7 +50,7 @@
     <!-- SOCIAL PANEL HTML -->
     <div class="social-panel-container">
         <div class="social-panel">
-            <p>Created with <i class="fa fa-heart"></i>
+            <p>Created with <i class="fa fa-heart"></i> 
                 <a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
             <button class="close-btn"><i class="fas fa-times"></i></button>
             <h4>Get in touch on</h4>
@@ -85,6 +86,8 @@
     <button class="floating-btn">
         Get in Touch
     </button>
+    
+    
     
  
     <script src="form.js"></script>
