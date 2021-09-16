@@ -1,15 +1,17 @@
-// var Color = require('color');
-// // Hi Everyone, Sojol Here.
-// // Today we are talking about a little bit of the fundamental concepts ofJavascript programming languages.If you are new to Javascript this is for you.
+ 
+// Hi Everyone, Sojol Here.
+// Today we are talking about a little bit of the fundamental concepts of Javascript programming languages.If you are new to Javascript this is for you.
 
-// // The String Types in JavaScript:
-// // console.log("Hello Javascript");
+// The String Types in JavaScript:
 
-// //Javascript String discussion:
-// //If we want to store and manipulate  text type data on javascript then we need string type.It is a primitive data type in Javascript;
+console.log("Hello Javascript");
+
+// Javascript String discussion:
+// If we want to store and manipulate  text type data on javascript then we need string type.It is a primitive data type in Javascript;
 // //Javascript string is an object that represents a sequence of character.
 // //Example :
-// //var myName="Pitar";
+// var myName="Pitar";
+console.log(myName);
 // //Here the variable myName have a value of Pitar;
 // //Pitar is  blocked by the double quote this is one way to declare and store text data on Javascript String;
 // //Here another two way to declare and store text data in javascript;
