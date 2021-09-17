@@ -1,3 +1,6 @@
+
+
+
 //  Object.create()
 
 const captain={
@@ -50,7 +53,8 @@ const player1=Object.create(captain)
 // introduce to class 
 
 
- 
+ // class in javascript: blueprints of an object
+
 class Player {
 
     constructor(name,age) {
@@ -69,4 +73,10 @@ const shakib= new Player("Shakib",34);
 shakib.ball();
 shakib.bat();
 console.log(shakib);
+// the new keyword 
+/**
+ * creates a new empty object
+ * it binds the value of 'this' to the new empty object
+ * it calls the constructor function to build the real object
+ */
   
