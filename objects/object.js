@@ -65,7 +65,7 @@ function User(name, age) {
   return ob;
 }
 
-var ob = new User("Sojol", 43);
+var ob = new User("Sojol ", 43);
 console.log(ob);
 
 // Singleton pattern:
