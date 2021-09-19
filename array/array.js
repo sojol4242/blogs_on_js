@@ -7,7 +7,7 @@ Array: array is a types in javascript for storing all types of data
 var array = [32, 4, "pitar"];
 
 for (var i = 0; i <= array.length; i++) {
-  console.log(array[i]);
+  console.dir(array[i]);
 }
 
 
