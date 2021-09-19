@@ -9,7 +9,7 @@ A regular expression can be a single character, or a more complicated pattern.
 Regular expressions can be used to perform all types of text search and text replace operations.
 */
 // Defining a Regular Expression in JavaScript
-var rgx=/[^EEE]/;
+var rgx=/[^ghgh]/;
 // console.log(rgx);
 
 // with new keyword;
