@@ -1,7 +1,8 @@
 // javascript date object:
 
 const today=new Date();
-// console.log(today); // ISO format date
+ 
+console.log(today); // ISO format date
 // Date format;
 // ISO Date	"2015-03-25" (The International Standard)
 const d = new Date("2020-09-25");
