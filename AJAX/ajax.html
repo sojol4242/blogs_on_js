@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XML HTTP Request</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20vh auto;
+    }
+    .container h4{
+        font-size: 2rem;
+    }
+    #getData,
+    #sendData {
+      padding: 5px 15px;
+      border: none;
+      border-radius: 10px;
+      background: yellowgreen;
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h4>Courier Service</h4>
+      <div class="btn">
+        <button id="getData">Get Data</button>
+        <button id="sendData">Send Data</button>
+      </div>
+    </div>
+    <script src="./ajax.js"></script>
+  </body>
+</html>
