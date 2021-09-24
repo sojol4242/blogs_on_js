@@ -9,7 +9,7 @@ A regular expression can be a single character, or a more complicated pattern.
 Regular expressions can be used to perform all types of text search and text replace operations.
 */
 // Defining a Regular Expression in JavaScript
-var rgx=/[^ghgh]/;
+var rgx=/^[1-9][1-9]\S+[EEE]*|[019]$/gi;
 // console.log(rgx);
 
 // with new keyword;
@@ -35,4 +35,27 @@ The following sequences can be used to match a specific set of characters.
 [A-Z] — Matches characters in a range. For example, [A-E] will match A, B, C, D, and E.
 [ABC] — Matches a character in the given set. For example, [AMT] will only match A, M, and T.
 [^ABC] — Matches all the characters not present in the given set. For example, [^A-E] will match all other characters except A, B, C, D, and E.
+{min,max}-
+*-all with 0
++- all with 1
+\-escaping
+?-optional
 */
+var sId='3233'
+var regex=/(^[1-9]{2}[E]{3}0[0-9]{2})/g;
+// method of RegExp
+const match=sId.match(regex);
+console.log(match);
+const replace=sId.replace("True")
+console.log(match?replace:"False");
+const search=sId.search(regex);
+console.log(search);
+const test=regex.test(regex);
+console.log(test);
+//  email validation example
+var email=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+// pass validation example
+var pass=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}$/gm;
+
+
+ 
