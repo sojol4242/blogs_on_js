@@ -90,12 +90,12 @@
 // const result6 = result1.includes("hello");
 // console.log(result6); // true
 
-const hideCard=(str)=>{
-  // str.replace(/\b(?:d{4}[-]?){}(?=\d{4}\b)/gm,'#### #### ####  ')
-  return  str.replace(/\b(?:\d{4}[ -]?){3}(?=\d{4}\b)/gm,'#### #### #### ') 
+// const hideCard=(str)=>{
+//   // str.replace(/\b(?:d{4}[-]?){}(?=\d{4}\b)/gm,'#### #### ####  ')
+//   return  str.replace(/\b(?:\d{4}[ -]?){3}(?=\d{4}\b)/gm,'#### #### #### ') 
 
-}
+// }
 
-const res= hideCard('visa 6476 6474 6764 3421');
+// const res= hideCard('visa 6476 6474 6764 3421');
 
-console.log(res);
+// console.log(res);
