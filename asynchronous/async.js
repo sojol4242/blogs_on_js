@@ -6,7 +6,7 @@
 //   console.log(`processing order for customer 1`);
 //   let currentTime = new Date().getTime();
 
-//      while(currentTime+4000>=new Date().getTime());
+//   while (currentTime + 4000 >= new Date().getTime());
 
 //   console.log(`oder processed for customer 1`);
 // };
@@ -20,7 +20,7 @@
 //   console.log(`processing order for customer 1`);
 //   let currentTime = new Date().getTime();
 
-//   // setTimeout is a async function
+// setTimeout is a async function
 //   setTimeout(() => {
 //     currentTime=new Date().getTime();
 //     console.log("cooking completed");
@@ -33,36 +33,40 @@
 // console.log(`completed order of customer 1`);
 
 // utilize async function in optimized way
-// const takeOrder = (customer, callback) => {
-//   console.log(`take order for ${customer}`);
-//   callback(customer);
-// };
+const takeOrder = (customer, callback) => {
+  console.log(`take order for ${customer}`);
+  callback(customer);
+};
 
-// const processOrder = (customer, callback) => {
-//   console.log(`processing order for ${customer}`);
-//   let currentTime = new Date().getTime();
+const processOrder = (customer, callback) => {
+  console.log(`processing order for ${customer}`);
+  let currentTime = new Date().getTime();
 
-//   // async function
-//   setTimeout(() => {
-//     currentTime = new Date().getTime();
-//     console.log("cooking completed");
-//     console.log(`oder processed for  ${customer}`);
-//     callback(customer);
-//   }, 4000);
-// };
-// const completedOrder = (customer) => {
-//   console.log(`completed order for ${customer}`);
-// };
-// takeOrder("Sojol", (customer) => {
-//   processOrder(customer, (customer) => {
-//     completedOrder(customer);
-//   });
-// });
+// async function 
+  setTimeout(() => {
+    currentTime = new Date().getTime();
+    console.log("cooking completed");
+    console.log(`oder processed for  ${customer}`);
+    callback(customer);
+  }, 4000);
+};
+const completedOrder = (customer) => {
+  console.log(`completed order for ${customer}`);
+};
 
-// takeOrder("Sonet", (customer) => {
-//   processOrder(customer, (customer) => {
-//     completedOrder(customer);
-//   });
-// });
+takeOrder("Sojol", (customer) => {
+  processOrder(customer, (customer) => {
+    completedOrder(customer);
+  });
+});
 
-
+takeOrder("Sonet", (customer) => {
+  processOrder(customer, (customer) => {
+    completedOrder(customer);
+  });
+});
+takeOrder("Atik", (customer) => {
+  processOrder(customer, (customer) => {
+    completedOrder(customer);
+  });
+});
